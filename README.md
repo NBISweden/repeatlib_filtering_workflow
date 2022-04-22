@@ -9,6 +9,7 @@ The workflow consists of the following files and directories:
 - `Snakefile`: contains some python code and rules with code to be executed. Each rule will be submitted as a job to the cluster.
 - `config/config.yaml`: contains parameters and paths to input and output files. Needs to be manually edited before running the workflow.
 - `config/cluster.yaml`: contains parameters for slurm jobs.
+- `environment.yaml`: conda environment file to install Snakemake.
 - `envs/` directory with conda environments required by most of the rules.
 
 ## Analyses
@@ -37,7 +38,7 @@ The workflow consists of the following files and directories:
   configuration file `config/cluster.yaml`. Prior to continuing, edit the header section of the `config/cluster.yaml` file so 
   that it includes an active compute project ID.
 - Edit the config file `config/config.yaml`, following the instructions there
-- The first time you run the workflow, create a conda environment from the file "envs/snakemake5191_py36.yaml" for Snakemake 
+- The first time you run the workflow, create a conda environment from the file `environment.yaml` containing Snakemake
   (see https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file 
   for more info on how to create conda environments). Note that the workflow was developed and tested with Snakemake version 5.19.1.
 
