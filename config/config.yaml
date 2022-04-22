@@ -1,0 +1,17 @@
+### Configuration settings for the repeat library filtering workflow ###
+
+########################## INPUT DATA ##################################
+
+# Directory containing repeat libraries, e.g. "/home/user/repeat_modeler/"
+REP_DIR: ""
+
+# List with repeat library input file names, e.g. ["hetpec_families.fa", "lonfla_families.fa"]
+REP_LIBS: []
+
+# Full path to protein fasta file, e.g. reviewed proteins from UniProt/SwissProt
+PROT: ""
+
+########################## OUTPUT DATA #################################
+
+# Directory for results files, e.g. "/home/user/repeat_modeler/filtered_libraries/"
+OUT_DIR: ""

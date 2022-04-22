@@ -1,0 +1,18 @@
+# cluster.yaml - cluster configuration file for repeat library filtering workflow
+__default__:
+  account: # enter your compute cluster ID
+  time: 01:00:00
+  ntasks: 1
+  cpus-per-task: 1
+  partition: core
+transposonPSI:
+  time: 10-00:00:00
+filter_uniprot_fasta:
+  time: 1-00:00:00
+filtered_blast_db:
+  time: 08:00:00
+blast_repeat_library:
+  cpus-per-task: 8
+  time: 4-00:00:00
+protexcluder:
+  time: 1-00:00:00
