@@ -1,4 +1,4 @@
-# Repeat library filtering (v1.0) ###
+# Repeat library filtering (v1.0)
 
 This Snakemake workflow was developed to filter a repeat library for TEs resembling proteins.
 It was written for execution on a HPC cluster and the slurm workload manager for job submission.
